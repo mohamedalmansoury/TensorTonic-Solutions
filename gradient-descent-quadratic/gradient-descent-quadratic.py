@@ -1,0 +1,12 @@
+def gradient_descent_quadratic(a, b, c, x0, lr, steps):
+    """
+    Perform gradient descent to minimize f(x) = a*x^2 + b*x + c
+    Return final x after 'steps' iterations.
+    """
+    x = float(x0)
+    
+    for _ in range(steps):
+        grad = 2 * a * x + b   # f'(x)
+        x = x - lr * grad
+    
+    return float(x)
