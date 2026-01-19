@@ -9,4 +9,4 @@ def dot_product(x, y):
     y = np.asarray(y , dtype = np.float64)
     dot = np.dot(x, y)
 
-    return dot
+    return x @ y
